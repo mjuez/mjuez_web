@@ -1,0 +1,19 @@
+{
+	"spanish": "Spanish",
+	"english": "English",
+	"subtitle": "Computer Scientist",
+	"contactlegend": "Do you want to tell me something?",
+	"namesurname": "Name and surname",
+	"email": "E-mail",
+	"phone": "Phone number",
+	"message": "Message",
+	"send": "Send",
+	"cv": "My Curriculum Vitae",
+	"language": "Language",
+	"size": "Size",
+	"format": "Format",
+	"sentmsg": "Thank you! Your message has been sent successfully",
+	"errormsg": "Oops! Something went wrong",
+	"404title": "Something went wrong",
+	"404subtitle": "Error 404: Not found. The page or resource does not exist."
+}

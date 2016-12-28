@@ -1,0 +1,208 @@
+/**
+ * style.css
+ * 
+ * @author Mario Juez.
+ * @since 26/12/2016.
+ */
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover, a:visited, a:active{
+    color: #000000;
+}
+
+.language{
+    background-color: #FFFFFF;
+    border-left: 1dp solid;
+    border-bottom: 1dp solid;
+    border-color: #DDDDDD;
+    padding: 5px;
+    position: fixed;
+    top:0;
+    right:0;
+}
+
+.language select{
+    border: 1px solid #000000;
+    padding: 2px 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.logo{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.logo img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.content{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.content h1{
+    margin-bottom: 5px;
+}
+
+.content h2{
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #999999;
+}
+
+.content h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.contact, .cv {
+    width: 40%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.contact .mail{
+    padding: 10px 15px;
+    border: 2px solid;
+    font-size: 13px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact .sent{
+    border-color: mediumseagreen;
+    color: seagreen;
+}
+
+.contact .error{
+    border-color: indianred;
+    color: darkred;
+}
+
+.contact label{
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.contact .required{
+    color: #FF0000;
+}
+
+.contact input, .contact textarea{
+    margin: 5px 0 10px 0;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    padding: 8px 10px;
+    font-size: 13px;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.contact .repeatemail{
+    display: none;
+}
+
+.contact input[type="submit"]{
+    background-color: #FFFFFF;
+    border: 2px solid #999999;
+    text-transform: uppercase;
+}
+
+.contact input[type="submit"]:hover{
+    border-color: #000000;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.cv {
+    overflow: hidden;
+}
+
+.cv .es, .cv .en{
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #999999;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.cv .es:hover, .cv .en:hover{
+    border-color: #000000;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.cv .es {
+    float: left;
+}
+
+.cv .en {
+    float: right;
+}
+
+.cv img{
+    height: 100%;
+    width: 20px;
+    float: right;
+    top: 0;
+}
+
+.footer {
+    margin-top: 35px;
+    border-top: 1px solid #DDDDDD;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer .icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
+
+.footer .icon path {
+    fill: #999999;
+}
+
+.footer .icon:hover path {
+    fill: #000000;
+}
+
+@media screen and (max-device-width: 768px){
+    .contact, .cv{
+        width: 60%;
+    }
+}
+
+@media screen and (max-device-width: 480px){
+    .contact, .cv{
+        width: 90%;
+    }
+}
+
+@media screen and (max-device-width: 625px){
+    .cv .es, .cv .en{
+        width: 100%;
+        float: none;
+    }
+
+    .cv .es {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,19 @@
+{
+	"spanish": "Español",
+	"english": "Inglés",
+	"subtitle": "Graduado en Ingeniería Informática",
+	"contactlegend": "¿Quieres decirme algo?",
+	"namesurname": "Nombre y apellidos",
+	"email": "Correo electrónico",
+	"phone": "Número de teléfono",
+	"message": "Mensaje",
+	"send": "Enviar",
+	"cv": "Mi Curriculum Vitae",
+	"language": "Idioma",
+	"size": "Tamaño",
+	"format": "Formato",
+	"sentmsg": "¡Gracias! Tu mensaje ha sido enviado.",
+	"errormsg": "¡Oops! Algo ha ido mal.",
+	"404title": "Algo ha ido mal",
+	"404subtitle": "Error 404: La página o recurso que está buscando no existe."
+}

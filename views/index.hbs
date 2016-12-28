@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mario Juez</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="language">
+		<select id="language_selector" name="language_selector">
+			<option value="es" {{__selected "es"}}>{{__ "spanish"}}</option>
+			<option value="en" {{__selected "en"}}>{{__ "english"}}</option>
+		</select>
+	</div>
+	<div class="logo">
+		<img src="img/mjuez.svg" title="Logo Mario Juez" alt="Mario Juez" />
+	</div>
+	<div class="content">
+		<h1>MARIO JUEZ</h1>
+		<h2>{{__ "subtitle"}}</h2>
+		<div class="contact">
+			<h3>{{__ "contactlegend"}}</h3>
+			{{#if post}}
+				{{#if sent}}
+					<div class="mail sent">{{__ "sentmsg"}}</div>
+				{{else}}
+					<div class="mail error">{{__ "errormsg"}}</div>
+				{{/if}}
+			{{/if}}
+			<form method="POST" id="mail_form" action="/">
+				<div>
+					<div class="label">
+						<label for="name">{{__ "namesurname"}} <span class="required">*</span>:</label>
+					</div>
+					<div class="field">
+						<input type="text" name="name" id="name" required/>
+					</div>
+				</div>
+				<div>
+					<div class="label">
+						<label for="email">{{__ "email"}} <span class="required">*</span>:</label>
+					</div>
+					<div class="field">
+						<input type="email" name="email" id="email" required/><br />
+					</div>
+				</div>
+				<div class="repeatemail">
+					<div class="label">
+						<label for="repeatemail">{{__ "email"}} <span class="required">*</span>:</label>
+					</div>
+					<div class="field">
+						<input type="email" name="repeatemail" id="repeatemail"/><br />
+					</div>
+				</div>
+				<div>
+					<div class="label">
+						<label for="phone">{{__ "phone"}}:</label>
+					</div>
+					<div class="field">
+						<input type="text" name="phone" id="phone"/>
+					</div>
+				</div>
+				<div>
+					<div class="label">
+						<label for="message">{{__ "message"}} <span class="required">*</span>:</label>
+					</div>
+					<div class="field">
+						<textarea name="message" id="message" rows="6"></textarea>
+					</div>
+				</div>
+				<div>
+					<input type="submit" value="{{__ "send"}}" />
+				</div>
+			</form>
+		</div>
+		<div class="cv">
+			<h3>{{__ "cv"}}</h3>
+			<a href="pdf/cv_mariojuez_es.pdf" target="_BLANK">
+				<div class="es">
+					<img src="img/download.svg" title="Download" alt="Download" />
+					<strong>{{__ "language"}}:</strong> {{__ "spanish"}} <br />
+					<strong>{{__ "size"}}:</strong> 1.37 MB. <br />
+					<strong>{{__ "format"}}:</strong> PDF.
+				</div>
+			</a>
+			<a href="pdf/cv_mariojuez_en.pdf" target="_BLANK">
+				<div class="en">
+					<img src="img/download.svg" title="Download" alt="Download" />
+					<strong>{{__ "language"}}:</strong> {{__ "english"}} <br />
+					<strong>{{__ "size"}}:</strong> 1.37 MB. <br />
+					<strong>{{__ "format"}}:</strong> PDF.
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="https://github.com/mjuez" target="_BLANK"><img src="img/github.svg" class="icon" title="Github" alt="Github" /></a>
+		<a href="https://www.linkedin.com/in/mjuez" target="_BLANK"><img src="img/linkedin.svg" class="icon" title="LinkedIn" alt="LinkedIn" /></a>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.svgInject.js"></script>
+	<script type="text/javascript" src="js/helpers.js"></script>
+</body>
+</html>
